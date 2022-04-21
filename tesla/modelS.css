@@ -586,6 +586,10 @@ section .info .info-box:nth-child(4) {
     font-weight: 500;
 }
 
+.section-stats .stats-info .header .hidden{
+    display: none;
+}
+
 .section-stats .stats-info .header .btn:hover {
     background-color: #fff;
 }
@@ -614,10 +618,10 @@ section .info .info-box:nth-child(4) {
     }
 
     .section-stats .stats-info .header .hidden{
-        opacity: 1;
         font-weight: 400;
         font-size: 14px;
         margin-top: 1rem;
+        display: block;
     }
 
     .section-stats .stats-info .description {
