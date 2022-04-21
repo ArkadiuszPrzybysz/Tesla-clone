@@ -252,7 +252,7 @@ section .info .info-box:nth-child(4) {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 5rem 2rem;
+    padding: 10rem 2rem;
 }
 
 .section-3 .video-box video{
@@ -277,6 +277,7 @@ section .info .info-box:nth-child(4) {
     overflow: hidden;
     width: 40vw;
     position: relative;
+    margin-top: 3rem;
 }
 
 @media (max-width: 900px) {
@@ -295,13 +296,22 @@ section .info .info-box:nth-child(4) {
     position: relative;
     display: flex;
     transition: all 0.5s ease-in;
-    color: #fff;
     margin-top: 3.5rem;
 }
 
 .carousel-content .carousel-info {
     width: 100%;
     padding: 0 1rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.carousel-content .carousel-info h1 {
+    font-size: 1.2rem;
+}
+
+.carousel-content .carousel-info p {
+    font-size: 0.9rem;
 }
 
 .carousel-dots {
@@ -369,6 +379,102 @@ section .info .info-box:nth-child(4) {
 
 .carousel-dots.fifth-current #dot5 {
     background-color: #fff;
+}
+
+/* TILES */
+
+.tiles-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.tiles-container .columns {
+    flex: 0 0 auto;
+    width: 30%;
+    min-width: 400px;
+    display: block;
+    padding: 0 5px
+}
+
+@media (max-width: 900px) {
+    .tiles-container .columns {
+        width: 50%;
+        min-width: 100px;
+    }
+}
+
+@media (max-width: 720px) {
+    .tiles-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .reverse {
+        flex-direction: column-reverse;
+    }
+
+    .tiles-container .columns {
+        width: 100%;
+    }
+
+    .tiles-container .content .content-container {
+        padding: 3rem 3rem;
+    }
+}
+
+.tiles-container .image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.tiles-container .image video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.tiles-container .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.tiles-container .content .content-container {
+    color: #fff;
+    font-weight: 500;
+}
+
+.tiles-container .content .content-container h1 {
+    font-size: 1.3rem;
+}
+
+.tiles-container .content .content-container p {
+    font-size: 0.9rem;
+}
+
+.tiles-container .right {
+    padding-left: 8rem;
+}
+
+.tiles-container .left {
+    padding-right: 8rem;
+}
+
+@media (max-width: 720px) {
+    .tiles-container .right {
+        padding-left: 0rem;
+    }
+    
+    .tiles-container .left {
+        padding-right: 0rem;
+    }
 }
 
 /* ADNOTE */
