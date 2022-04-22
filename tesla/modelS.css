@@ -630,6 +630,76 @@ section .info .info-box:nth-child(4) {
     
 }
 
+/* CHASSIS */
+
+.chassis {
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 1rem;
+}
+
+.chassis .info {
+    width: 70%;
+    margin: 5rem;
+}
+
+.chassis .img {
+    width: 80%;
+}
+
+.chassis .img img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.chassis .models {
+    width: 90%;
+    margin: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.chassis .models .model-box {
+    width: 32%;
+    border-top: 2px solid gray;
+    margin-right: 2rem;
+    padding-top: 0.7rem;
+}
+
+.chassis .models .model-box h2 {
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+.chassis .models .model-box p {
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 1rem;
+}
+
+.chassis .models .specs {
+    display: flex;
+    flex-direction: row;
+}
+
+.chassis .models .specs .spec-info {
+    margin: 1rem 2rem 0 0;
+}
+
+.chassis .models .specs .spec-info h1 {
+    font-size: 22px;
+}
+
+.chassis .models .specs .spec-info p {
+    font-size: 13px;
+    font-weight: 500;
+}
+
 /* ADNOTE */
 
 .adnote {
