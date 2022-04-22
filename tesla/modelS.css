@@ -627,6 +627,10 @@ section .info .info-box:nth-child(4) {
     .section-stats .stats-info .description {
         display: none;
     }
+
+    .section-stats .stats-info .header .btn {
+        width: 100%;
+    }
     
 }
 
@@ -641,7 +645,7 @@ section .info .info-box:nth-child(4) {
 }
 
 .chassis .info {
-    width: 70%;
+    width: 50%;
     margin: 5rem;
 }
 
@@ -665,21 +669,36 @@ section .info .info-box:nth-child(4) {
 
 .chassis .models .model-box {
     width: 32%;
-    border-top: 2px solid gray;
+    border-top: 2px solid rgba(0,0,0,0.3);
     margin-right: 2rem;
     padding-top: 0.7rem;
+    transition: 0.3s ease-in-out;
+}
+
+.chassis .models .model-box.active {
+    border-top: 4px solid #000;
 }
 
 .chassis .models .model-box h2 {
     font-size: 16px;
     font-weight: 500;
     padding-bottom: 1rem;
+    color: rgba(0,0,0,0.3);
+}
+
+.chassis .models .model-box.active h2 {
+    color: #000;
 }
 
 .chassis .models .model-box p {
     font-size: 14px;
     font-weight: 400;
     padding-bottom: 1rem;
+    color: rgba(0,0,0,0.3);
+}
+
+.chassis .models .model-box.active p {
+    color: #000;
 }
 
 .chassis .models .specs {
@@ -693,11 +712,43 @@ section .info .info-box:nth-child(4) {
 
 .chassis .models .specs .spec-info h1 {
     font-size: 22px;
+    color: rgba(0,0,0,0.3);
+}
+
+.chassis .models .model-box.active .specs .spec-info h1 {
+    color: #000;
 }
 
 .chassis .models .specs .spec-info p {
     font-size: 13px;
     font-weight: 500;
+    color: rgba(0,0,0,0.3);
+}
+
+.chassis .models .model-box.active .specs .spec-info p {
+    color: #000;
+}
+
+@media (max-width: 900px) {
+    .chassis {
+        padding: 2rem 0;
+    }
+
+    .chassis .img {
+        width: 100%;
+    }
+
+    .chassis .info {
+        width: 90%;
+    }
+
+    .chassis .img img {
+        border-radius: 0;
+    }
+
+    .chassis .models .model-box {
+        width: 50%;
+    }
 }
 
 /* ADNOTE */
