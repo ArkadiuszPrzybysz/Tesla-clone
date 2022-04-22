@@ -670,9 +670,12 @@ section .info .info-box:nth-child(4) {
 .chassis .models .model-box {
     width: 32%;
     border-top: 2px solid rgba(0,0,0,0.3);
-    margin-right: 2rem;
     padding-top: 0.7rem;
     transition: 0.3s ease-in-out;
+}
+
+.chassis .models .model-box:nth-child(1) {
+    margin-right: 2rem;
 }
 
 .chassis .models .model-box.active {
