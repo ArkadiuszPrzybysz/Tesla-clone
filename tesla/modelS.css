@@ -13,7 +13,14 @@ html {
 body {
     color: #171a20;
     font-family: 'M PLUS 1', sans-serif;
-    -webkit-tap-highlight-color: transparent;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 /* NAVBAR */
