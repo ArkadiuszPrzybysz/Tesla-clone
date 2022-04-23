@@ -13,6 +13,7 @@ html {
 body {
     color: #171a20;
     font-family: 'M PLUS 1', sans-serif;
+    -webkit-tap-highlight-color: transparent;
 }
 
 /* NAVBAR */
